@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>objects</title>
+</head>
+
+<body>
+    <script>
+        /*
+        const product = {
+            name: 'socks',
+            price: 1090
+        };
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+
+        product.name = 'cotton socks';
+        console.log(product.name);
+
+        product.newProperty = true;
+        console.log(product);
+
+        delete product.newProperty;
+        console.log(product);
+        */
+        /*
+                const product2 = {
+                    name: 'shirt',
+                    'delivery- time': '1 day',
+                    rating: {
+                        stars: 4.5,
+                        count: 87
+                    },
+                    fun: function function1() {
+                        console.log('function inside object');
+                    }
+                };
+        
+                console.log(product2);
+                console.log(product2.name);
+        
+                console.log(product2['name']);
+                //dot-notation doesnt work with delivery-time bcoz it thinks - is minus and tries to do maths
+                //this is when bracket notation works and comes to rescue!
+                console.log(product2['delivery - time']);
+                console.log(product2.rating);
+                console.log(product2.rating.stars);
+        
+                product2.fun();
+        
+                //a function inside object is method
+                console.log(typeof console);//object
+                console.log(typeof console.log);//function
+                //examples : Math.random()
+        
+                //built-in objects : Json , localStorage (also console and Math)
+        
+                //json
+                //is similar to javascript but with less features
+                //it uses " " and doesnt support ' ' and functions
+                //so why json? bcoz its universal
+                //javascript object is only understood by javascript 
+        
+                //converts js object to json
+                console.log(JSON.stringify(product2));
+        
+                //json to js object
+                const jsonString = JSON.stringify(product2);
+                console.log(JSON.parse(jsonString));
+        
+                //localstorage
+        
+                 */
+
+        //auto boxing
+
+        console.log('hello'.length);// (length = property)
+        console.log('hello'.toUpperCase());//method
+
+        //references
+        const object1 = {
+            message: 'hello'
+        };
+        const object2 = object1;
+
+        object1.message = 'good';
+
+        console.log(object1);
+        console.log(object2);
+
+        const object3 = {
+            message: 'good'
+        };
+
+        console.log(object3 === object1);
+        console.log(object2 === object1);
+
+        const object4 = {
+            message: 'good',
+            price: 799
+        };
+
+
+        //destructuring
+        //const message = object4.message;
+        const { message, price } = object4;
+        console.log(message);
+        console.log(price);
+
+        const object5 = {
+            //shorthand property
+
+            //message: message
+            message,
+
+            //shorthand method
+            //method: function function1() {
+            //    console.log('method');
+            //}
+            method() {
+                console.log('method');
+            }
+        };
+
+        console.log(object5);
+        object5.method();
+
+
+    </script>
+</body>
+
+</html>

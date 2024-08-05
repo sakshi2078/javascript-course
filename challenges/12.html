@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>App</title>
+</head>
+
+<body>
+
+    <button class="js-button">
+        Start
+    </button>
+
+    <button class="js-addToCart-btn">
+        Add to cart
+    </button>
+
+    <p class=" js-message"></p>
+
+
+
+    <button onclick="messages++">ADD</button>
+    <button onclick="messages--">REMOVE</button>
+
+    <script>
+
+        const add = function () {
+            console.log(2 + 3);
+        };
+
+        add();
+        add();
+
+        function runTwice(fun) {
+            fun();
+            fun();
+        }
+
+        runTwice(function () {
+            console.log('12b');
+        });
+
+        runTwice(add);
+
+        const startbtn = document.querySelector('.js-button');
+        startbtn.addEventListener('click', () => {
+            const button = document.querySelector('.js-button');
+            button.innerHTML = 'Loading...';
+            setTimeout(() => {
+                button.innerHTML = 'Finished!';
+            }, 1000);
+
+        });
+
+        let timeoutId;
+        const addToCart = document.querySelector('.js-addToCart-btn');
+        addToCart.addEventListener('click', () => {
+            const messageElement = document.querySelector('.js-message');
+            messageElement.innerHTML = 'Added';
+
+            clearTimeout(timeoutId);
+
+            timeoutId = setTimeout(function () {
+                messageElement.innerHTML = '';
+            }, 2000);
+        });
+
+        setInterval(() => {
+            if (document.title === 'App') {
+                document.title = '(2) New messages';
+            } else {
+                document.title = 'App';
+            }
+        }, 1000);
+
+
+        let messages = 2;
+        setInterval(() => {
+            if (messages === 0) {
+                document.title = 'App';
+            }
+            if (messages > 0) {
+                if (document.title === 'App') {
+                    document.title = `(${messages}) New messages`;
+                } else {
+                    document.title = 'App';
+                }
+            }
+        }, 1000);
+
+    </script>
+</body>
+
+</html>
