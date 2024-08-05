@@ -1,0 +1,120 @@
+.amazon-btn {
+    color: black;
+    background-color: rgb(255, 216, 20);
+    padding: 6px 48px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.uber-request-btn {
+    color: white;
+    background-color: black;
+    padding: 10px 28px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.uber-schedule-btn {
+    color: black;
+    background-color: rgb(230, 230, 230);
+    padding: 12px 25px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+/*
+.is-gamer {
+    color: white;
+    background-color: black;
+    padding: 10px 28px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+
+.gaming-btn {
+    padding: 10px 28px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.is-muscian {
+    color: white;
+    background-color: black;
+    padding: 10px 28px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+
+.music-btn {
+    padding: 10px 28px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.is-developer {
+    color: white;
+    background-color: black;
+    padding: 10px 28px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+
+.tech-btn {
+    padding: 10px 28px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+*/
+/*
+.is-toggled{
+    color: white;
+    background-color: black;
+    padding: 10px 28px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.js-button{
+    padding: 10px 28px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+*/
+.toggle-button {
+    background-color: rgb(230, 230, 230);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .is-toggled {
+    background-color: black;
+    color: white;
+  }
